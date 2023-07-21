@@ -1,7 +1,7 @@
 # ios-scraper
-There's a ton of value to get from getting the list of attendees of marketing events you are thinking of attending. However you usually need to be a sponsor to get the full list.
+There's a ton of value to get from getting the list of attendees of marketing events you are thinking of attending. However, you usually need to be a sponsor to get the full list.
 The following steps will allow you to scrape the attendee lists from the iOS event app.
-It implements a man-in-the-middle attack to catch all http calls made by your phone while your browsing the app in order to be able to download the content of the app.
+It implements a man-in-the-middle attack to catch all HTTP calls made by your phone while you're browsing the app in order to be able to download the content of the app.
 
 ## install HTTPS Debugger
 Mitmproxy is a free and open source interactive HTTPS proxy. 
@@ -25,6 +25,7 @@ In my case it is `192.168.4.6`
 ## connect to the proxy
 On your iPhone, go to <b>Settings | Wi-Fi </b> and to the properties of your Wi-Fi network. 
 ![wifi Settings](static/IMG_3035.PNG)
+
 Switch the HTTP Proxy to manual and set the it to the IP address of your computer running mitmproxy and port 8080.
 ![proxy Settings](static/IMG_3036.PNG)
 
@@ -32,8 +33,10 @@ Switch the HTTP Proxy to manual and set the it to the IP address of your compute
 go to `mitm.it`
 download the iOS certificate
 ![iOS Settings](static/IMG_3037.PNG)
+
 go to Settings -> general -> vpn & device management to install the new Profile
 ![VPN Settings](static/IMG_3038.PNG)
+
 go to Settings -> about -> certificate trust settings to toggle mitmproxy to ON
 ![Certificate Settings](static/IMG_3039.PNG)
 
