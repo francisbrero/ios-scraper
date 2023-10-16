@@ -14,7 +14,7 @@ Update the values of the variables:
 # Run the script
 ## Directly
 ```bash
-python3 ./lib/brella.py
+python3 ./brella/brella.py
 ```
 
 ## Run the script in a venv 
@@ -25,11 +25,11 @@ source env/bin/activate
 ```
 let's install the required libraries on the virtual environment
 ``` bash
-pip install -r ./lib/requirements.txt
+pip install -r ./brella/requirements.txt
 ```
 Now let's run the file
 ```bash
-python ./lib/brella.py
+python ./brella/brella.py
 ```
 
 Close the environment
