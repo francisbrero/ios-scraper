@@ -51,8 +51,8 @@ def get_attendee_values(attendee_attributes):
     for attribute in attributes:
         # If the attribute is not empty
         if attendee_attributes.get(attribute) is not None:
-            # Add the attribute to the string
-            attendee_string += attendee_attributes[attribute] + ','
+            # Add the attribute to the string, add " to escape commas
+            attendee_string += '"'+attendee_attributes[attribute] + '",'
         # If the attribute is empty
         else:
             # Add an empty string to the string
