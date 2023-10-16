@@ -1,3 +1,9 @@
+Welcome to Scrape city!
+=======================
+This repository contains a few scrapers:
+- ios scraper (see instructions below)
+- [brella app scraper](./brella/README.md)
+
 # ios-scraper
 There's a ton of value to get from getting the list of attendees of marketing events you are thinking of attending. However, you usually need to be a sponsor to get the full list.
 The following steps will allow you to scrape the attendee lists from the iOS event app.
