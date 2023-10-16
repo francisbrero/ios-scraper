@@ -12,8 +12,29 @@ Update the values of the variables:
 ![Instructions for Brella](../static/brella_instructions.png)
 
 # Run the script
+## Directly
 ```bash
 python3 ./lib/brella.py
+```
+
+## Run the script in a venv 
+Let's spin up a virtual environment
+``` bash
+python3 -m venv env
+source env/bin/activate
+```
+let's install the required libraries on the virtual environment
+``` bash
+pip install -r ./lib/requirements.txt
+```
+Now let's run the file
+```bash
+python ./lib/brella.py
+```
+
+Close the environment
+```bash
+deactivate
 ```
 
 This will create 2 files:
