@@ -1,3 +1,7 @@
+What is this?
+=============
+This will download the first 2000 attendees from Brella and save them in a CSV file.
+
 # Configure your credentials
 Rename the .env_sample file to .env
 Update the values of the variables:
@@ -11,3 +15,23 @@ Update the values of the variables:
 ```bash
 python3 ./lib/brella.py
 ```
+
+This will create 2 files:
+- brella.json => this file is the raw payload for troubleshooting. Feel free to ignore it
+- brella.csv => this is the list of attendees with a few relevant fields
+
+# Notes
+## Number of attendees downloaded
+If you want to get more, you can update the parameters [here](brella.py)
+```JSON
+'page[size]': 2000,
+```
+
+## Attributes to get from the payload
+If you want to get more attributes, you can update the list [here](brella.py)
+```python
+attributes = ['email', 'first-name', 'last-name', 'company-title', 'company-name', 'website', 'linkedin']
+```
+
+## Feedback
+Feel free to share feedback, request additions...

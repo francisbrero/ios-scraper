@@ -16,8 +16,14 @@ session_cookie = os.getenv('brella_session_cookie')
 attributes = ['email', 'first-name', 'last-name', 'company-title', 'company-name', 'website', 'linkedin']
 
 # Define the parameters for the Brella API call
-url = "https://api.brella.io/api/events/"+event+"/attendees?ignore_networking=true&order=newest&page\\[number\\]=1&page\\[size\\]=1000&search="
-payload = {}
+url = "https://api.brella.io/api/events/"+event+"/attendees"
+payload = {
+    'ignore_networking': True,
+    'order': 'newest',
+    'page[number]': 1,
+    'page[size]': 2000,
+    'search': '' 
+}
 headers = {
   'authority': 'api.brella.io',
   'accept': 'application/vnd.brella.v4+json',
